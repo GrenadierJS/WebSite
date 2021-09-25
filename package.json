@@ -15,7 +15,7 @@
 		"astro": "0.20.7",
 		"cssnano": "5.0.8",
 		"cssnano-preset-advanced": "5.1.4",
-		"firebase": "9.0.2",
+		"firebase": "9.1.0",
 		"html-minifier": "4.0.0",
 		"postcss-combine-duplicated-selectors": "10.0.3",
 		"postcss-combine-media-query": "1.0.1",
