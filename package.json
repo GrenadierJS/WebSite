@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@snowpack/plugin-postcss": "1.4.3",
 		"@tailwindcss/ui": "0.7.2",
-		"astro": "0.20.7",
+		"astro": "0.20.8",
 		"cssnano": "5.0.8",
 		"cssnano-preset-advanced": "5.1.4",
 		"firebase": "9.1.0",
