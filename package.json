@@ -3,11 +3,9 @@
 	"version": "0.0.1",
 	"scripts": {
 		"start": "astro dev",
-		"build": "astro build && npm run ucompress && npm run minify-html && npm run minify-firebase && npm run minify-webfontloader",
+		"build": "astro build && npm run ucompress && npm run minify-html",
 		"ucompress": "ucompress --dest ./dist --source ./dist && ucompress --dest ./dist/_astro --source ./dist/_astro",
-		"minify-html": "html-minifier -c html-minifier.config.json --input-dir dist/ --output-dir dist/ --file-ext html",
-		"minify-firebase": "terser dist/_astro/src/assets/js/firebase.js --config-file terser.config.json -o dist/_astro/src/assets/js/firebase.js",
-		"minify-webfontloader": "terser dist/_astro/src/assets/js/webfontloader.js --config-file terser.config.json -o dist/_astro/src/assets/js/webfontloader.js"
+		"minify-html": "html-minifier -c html-minifier.config.json --input-dir dist/ --output-dir dist/ --file-ext html"
 	},
 	"devDependencies": {
 		"@snowpack/plugin-postcss": "1.4.3",
@@ -23,7 +21,6 @@
 		"postcss-url": "10.1.3",
 		"snowpack": "3.8.8",
 		"tailwindcss": "2.2.17",
-		"terser": "5.9.0",
 		"ucompress": "0.22.2"
 	}
 }

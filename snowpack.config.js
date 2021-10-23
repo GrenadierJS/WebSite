@@ -6,7 +6,7 @@ module.exports = {
 		minify: true,
 		preload: true,
 		splitting: true,
-		target: "es2018",
+		target: "es2020",
 		treeshake: true,
 	},
 };
