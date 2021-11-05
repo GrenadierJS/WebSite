@@ -17,6 +17,12 @@ import Favicon from './components/Favicon.astro';
 		<Meta title="{title}" description="{description}" />
 		<Links />
 		<Favicon />
+
+		<!-- Service Worker -->
+		<script
+			type="module"
+			src="{Astro.resolve('../assets/js/pwaupdate.js')}"
+		></script>
 	</head>
 	<body>
 		<div id="grenadier-web" class="flex flex-grow">
