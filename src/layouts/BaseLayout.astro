@@ -21,7 +21,7 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		<!-- Service Worker -->
 		<script
 			type="module"
-			src="{Astro.resolve('../assets/js/pwaupdate.js')}"
+			src={Astro.resolve('../assets/js/pwaupdate.js')}
 		></script>
 	</head>
 	<body>
@@ -32,7 +32,7 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		<!-- Initialize Firebase -->
 		<script
 			type="module"
-			src="{Astro.resolve('../assets/js/firebase.js')}"
+			src={Astro.resolve('../assets/js/firebase.js')}
 		></script>
 
 		<!-- Initialize WebFonts -->
@@ -46,7 +46,7 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		</script>
 		<script
 			async
-			src="{Astro.resolve('../assets/js/webfontloader.js')}"
+			src={Astro.resolve('../assets/js/webfontloader.js')}
 		></script>
 	</body>
 </html>
