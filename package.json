@@ -4,7 +4,7 @@
 	"scripts": {
 		"start": "astro dev",
 		"build": "astro build && npm run ucompress && npm run minify-html",
-		"ucompress": "ucompress --dest ./dist --source ./dist && ucompress --dest ./dist/offline --source ./dist/offline",
+		"ucompress": "ucompress --dest ./dist --source ./dist",
 		"minify-html": "html-minifier -c html-minifier.config.json --input-dir dist/ --output-dir dist/ --file-ext html"
 	},
 	"devDependencies": {
