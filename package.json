@@ -9,7 +9,6 @@
 	},
 	"devDependencies": {
 		"@pwabuilder/pwaupdate": "0.2.0",
-		"@snowpack/plugin-postcss": "1.4.3",
 		"@tailwindcss/ui": "0.7.2",
 		"astro": "0.21.4",
 		"cssnano": "5.0.12",
