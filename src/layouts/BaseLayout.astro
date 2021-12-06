@@ -17,12 +17,6 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		<Meta title={title} description={description} />
 		<Links />
 		<Favicon />
-
-		<!-- Service Worker -->
-		<script
-			type="module"
-			src={Astro.resolve('../assets/js/pwaupdate.js')}
-		></script>
 	</head>
 	<body>
 		<div id="grenadier-web" class="flex flex-grow">
@@ -33,20 +27,6 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		<script
 			type="module"
 			src={Astro.resolve('../assets/js/firebase.js')}
-		></script>
-
-		<!-- Initialize WebFonts -->
-		<script>
-			WebFontConfig = {
-				google: {
-					families: ["Fira Sans:400&display=swap"],
-				},
-				events: false,
-			};
-		</script>
-		<script
-			async
-			src={Astro.resolve('../assets/js/webfontloader.js')}
 		></script>
 	</body>
 </html>
