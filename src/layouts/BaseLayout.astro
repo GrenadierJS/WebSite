@@ -1,8 +1,4 @@
 ---
-import Meta from './components/Meta.astro';
-import Links from './components/Links.astro';
-import Favicon from './components/Favicon.astro';
-
 const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma' } = Astro.props;
 ---
 
@@ -14,9 +10,174 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 			document.documentElement.classList.add("js");
 		</script>
 
-		<Meta title={title} description={description} />
-		<Links />
-		<Favicon />
+		<!-- Meta -->
+		<title>{title}</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+		<meta name="theme-color" content="#0ca678" />
+
+		<meta name="apple-mobile-web-app-capable" content="no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="msapplication-TileColor" content="#0ca678" />
+		<meta name="msapplication-config" content="/browserconfig.xml" />
+
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="twitter:dnt" content="on" />
+
+		<!-- Links -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css?family=Fira+Sans:400&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Fira+Sans:400&display=swap"
+			media="print"
+			onload="this.media='all'"
+		/>
+		<noscript>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Fira+Sans:400&display=swap"
+			/>
+		</noscript>
+		<script>
+			let fonts = {
+				"Fira Sans": [400],
+			};
+
+			for (const font in fonts) {
+				if (Object.hasOwnProperty.call(fonts, font)) {
+					const weights = fonts[font];
+
+					for (let index = 0; index < weights.length; index++) {
+						const weight = weights[index];
+
+						let fontName = `wfn${weight / 100}${font
+							.toLowerCase()
+							.replace(/\s/g, "")}`;
+
+						let fontClass = `wf-${font
+							.toLowerCase()
+							.replace(/\s/g, "")}-n${weight / 100}-active`;
+
+						if (sessionStorage[fontName]) {
+							document.documentElement.classList.add(fontClass);
+						}
+
+						if ("fonts" in document) {
+							Promise.all([
+								document.fonts.load(`${weight} 1em ${font}`),
+								document.fonts.load(
+									`italic ${weight} 1em ${font}`
+								),
+							]).then((_) => {
+								document.documentElement.classList.add(
+									fontClass
+								);
+								sessionStorage[fontName] = true;
+							});
+						} else {
+							document.documentElement.classList.add(fontClass);
+							sessionStorage[fontName] = true;
+						}
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet"
+		href={Astro.resolve('./../assets/css/global.css')} />
+		<link
+			rel="manifest"
+			href="/site.webmanifest"
+			crossorigin="use-credentials"
+		/>
+
+		<!-- Favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="/img/favicon/apple-touch-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="/img/favicon/apple-touch-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="/img/favicon/apple-touch-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="/img/favicon/apple-touch-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/img/favicon/apple-touch-icon-180x180.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="/img/favicon/apple-touch-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="/img/favicon/apple-touch-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="/img/favicon/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="/img/favicon/apple-touch-icon-76x76.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/img/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/img/favicon/android-chrome-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="194x194"
+			href="/img/favicon/favicon-194x194.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="/img/favicon/safari-pinned-tab.svg"
+			color="#0ca678"
+		/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<meta
+			name="msapplication-TileImage"
+			content="/img/favicon/mstile-144x144.png"
+		/>
 	</head>
 	<body class="antialiased flex flex-grow">
 		<div id="grenadier-web" class="flex flex-grow">
@@ -25,8 +186,9 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 
 		<!-- Initialize Firebase -->
 		<script
+			defer
 			type="module"
-			src={Astro.resolve('../assets/js/firebase.js')}
+			src={Astro.resolve('./../assets/js/firebase.js')}
 		></script>
 	</body>
 </html>

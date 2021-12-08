@@ -6,7 +6,7 @@ module.exports = {
 		require("postcss-combine-media-query")(),
 		require("postcss-combine-duplicated-selectors")({
 			removeDuplicatedProperties: true,
-			removeDuplicatedValues: true,
+			removeDuplicatedValues: false,
 		}),
 		require("cssnano")({ preset: "advanced" }),
 	],
