@@ -22,7 +22,9 @@
 	"preserveLineBreaks": false,
 	"preventAttributesEscaping": false,
 	"processConditionalComments": true,
-	"processScripts": [],
+	"processScripts": [
+		"module"
+	],
 	"quoteCharacter": "",
 	"removeAttributeQuotes": true,
 	"removeComments": true,
