@@ -5,7 +5,7 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 <!DOCTYPE html>
 <html lang="en" class="no-js" dir="ltr">
 	<head>
-		<script type="module">
+		<script>
 			document.documentElement.classList.remove("no-js");
 			document.documentElement.classList.add("js");
 		</script>
@@ -46,50 +46,7 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 				href="https://fonts.googleapis.com/css?family=Fira+Sans:400&display=swap"
 			/>
 		</noscript>
-		<script>
-			let fonts = {
-				"Fira Sans": [400],
-			};
-
-			for (const font in fonts) {
-				if (Object.hasOwnProperty.call(fonts, font)) {
-					const weights = fonts[font];
-
-					for (let index = 0; index < weights.length; index++) {
-						const weight = weights[index];
-
-						let fontName = `wfn${weight / 100}${font
-							.toLowerCase()
-							.replace(/\s/g, "")}`;
-
-						let fontClass = `wf-${font
-							.toLowerCase()
-							.replace(/\s/g, "")}-n${weight / 100}-active`;
-
-						if (sessionStorage[fontName]) {
-							document.documentElement.classList.add(fontClass);
-						}
-
-						if ("fonts" in document) {
-							Promise.all([
-								document.fonts.load(`${weight} 1em ${font}`),
-								document.fonts.load(
-									`italic ${weight} 1em ${font}`
-								),
-							]).then((_) => {
-								document.documentElement.classList.add(
-									fontClass
-								);
-								sessionStorage[fontName] = true;
-							});
-						} else {
-							document.documentElement.classList.add(fontClass);
-							sessionStorage[fontName] = true;
-						}
-					}
-				}
-			}
-		</script>
+		<script src={Astro.resolve('./../assets/js/fonts.js')}></script>
 		<link rel="stylesheet"
 		href={Astro.resolve('./../assets/css/global.css')} />
 		<link
@@ -187,7 +144,6 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		<!-- Initialize Firebase -->
 		<script
 			defer
-			type="module"
 			src={Astro.resolve('./../assets/js/firebase.js')}
 		></script>
 	</body>
