@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
 	mode: "jit",
 	purge: [
@@ -9,7 +11,11 @@ module.exports = {
 		container: {
 			center: true,
 		},
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["Fira Sans", ...defaultTheme.fontFamily.sans],
+			},
+		},
 	},
 	variants: {},
 	plugins: [require("@tailwindcss/ui")],
