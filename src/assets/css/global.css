@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.wf-firasans-n4-active {
-	font-family: "Fira Sans", sans-serif;
-}
-
 @layer base {
 	html {
 		-webkit-tap-highlight-color: transparent;
