@@ -1,5 +1,8 @@
 ---
-const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma' } = Astro.props;
+const {
+	title = "GrenadierJS",
+	description = "Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma",
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -28,8 +31,10 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 		<meta name="twitter:dnt" content="on" />
 
 		<!-- Links -->
-		<link rel="stylesheet"
-		href={Astro.resolve('./../assets/css/global.css')} />
+		<link
+			rel="stylesheet"
+			href={Astro.resolve('./../assets/css/global.css')}
+		/>
 		<link
 			rel="manifest"
 			href="/site.webmanifest"
@@ -119,14 +124,13 @@ const { title = 'GrenadierJS', description = 'Full-stack, multi-client JavaScrip
 	</head>
 	<body class="antialiased flex flex-grow">
 		<div id="grenadier-web" class="flex flex-grow">
-			<slot></slot>
+			<slot />
 		</div>
 
 		<!-- Initialize Firebase -->
 		<script
 			defer
 			type="module"
-			src={Astro.resolve('./../assets/js/firebase.js')}
-		></script>
+			src={Astro.resolve('./../assets/js/firebase.js')}></script>
 	</body>
 </html>
