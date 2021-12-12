@@ -8,7 +8,9 @@
 	"customAttrAssign": [],
 	"customAttrCollapse": "",
 	"customAttrSurround": [],
-	"customEventAttributes": ["/^on[a-z]{3,}$/"],
+	"customEventAttributes": [
+		"/^on[a-z]{3,}$/"
+	],
 	"decodeEntities": false,
 	"html5": true,
 	"ignoreCustomComments": [],
