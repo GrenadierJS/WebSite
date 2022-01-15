@@ -27,10 +27,7 @@ const {
 		<meta name="twitter:dnt" content="on" />
 
 		<!-- Links -->
-		<link
-			rel="stylesheet"
-			href={Astro.resolve('./../assets/css/global.css')}
-		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			rel="manifest"
 			href="/site.webmanifest"
@@ -117,6 +114,11 @@ const {
 			name="msapplication-TileImage"
 			content="/img/favicon/mstile-144x144.png"
 		/>
+
+		<!-- Style -->
+		<style global>
+			@import "./../assets/css/global.css";
+		</style>
 	</head>
 	<body class="flex flex-grow antialiased">
 		<div id="grenadier-web" class="flex flex-grow">
