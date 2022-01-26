@@ -3,12 +3,12 @@ module.exports = {
 		require("postcss-import"),
 		require("postcss-url"),
 		require("tailwindcss")("./tailwind.config.js"),
-		require("autoprefixer"),
 		require("postcss-combine-media-query"),
 		require("postcss-combine-duplicated-selectors")({
 			removeDuplicatedProperties: true,
 			removeDuplicatedValues: false,
 		}),
+		require("autoprefixer"),
 		require("cssnano")({ preset: "advanced" }),
 	],
 };
