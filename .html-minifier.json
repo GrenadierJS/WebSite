@@ -8,9 +8,7 @@
 	"customAttrAssign": [],
 	"customAttrCollapse": "",
 	"customAttrSurround": [],
-	"customEventAttributes": [
-		"/^on[a-z]{3,}$/"
-	],
+	"customEventAttributes": ["/^on[a-z]{3,}$/"],
 	"decodeEntities": false,
 	"html5": true,
 	"ignoreCustomComments": [],
@@ -24,9 +22,7 @@
 	"preserveLineBreaks": false,
 	"preventAttributesEscaping": false,
 	"processConditionalComments": true,
-	"processScripts": [
-		"module"
-	],
+	"processScripts": ["module"],
 	"quoteCharacter": "",
 	"removeAttributeQuotes": true,
 	"removeComments": true,
