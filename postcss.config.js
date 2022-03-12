@@ -11,5 +11,6 @@ module.exports = {
 		}),
 		require("autoprefixer"),
 		require("cssnano")({ preset: "advanced" }),
+		require("postcss-reporter"),
 	],
 };
