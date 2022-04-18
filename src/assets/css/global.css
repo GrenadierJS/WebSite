@@ -8,11 +8,16 @@ body {
 }
 
 body {
-	@apply antialiased dark:bg-black dark:text-white sm:subpixel-antialiased;
+	@apply antialiased
+		dark:bg-black
+		dark:text-white
+		sm:subpixel-antialiased;
 }
 
 img {
-	@apply inline-block select-none outline-none;
+	@apply inline-block
+		select-none
+		outline-none;
 }
 
 *,
