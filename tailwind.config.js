@@ -14,6 +14,15 @@ module.exports = {
 			fontFamily: {
 				sans: ["Fira Sans", ...defaultTheme.fontFamily.sans],
 			},
+			typography: {
+				DEFAULT: {
+					css: {
+						a: {
+							"font-weight": "400",
+						},
+					},
+				},
+			},
 		},
 	},
 	variants: {},
