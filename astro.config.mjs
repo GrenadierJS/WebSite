@@ -1,7 +1,12 @@
 import { defineConfig } from "astro/config";
-import turbolinks from "@astrojs/turbolinks";
+import critters from "astro-critters";
 
 export default defineConfig({
 	site: "https://grenadier.dev",
-	integrations: [turbolinks()],
+	integrations: [
+		critters({
+			preload: "body",
+			inlineFonts: true,
+		}),
+	],
 });
