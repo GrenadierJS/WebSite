@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import critters from "astro-critters";
+import compress from "astro-compress";
 
 export default defineConfig({
 	site: "https://grenadier.dev",
@@ -8,5 +9,6 @@ export default defineConfig({
 			preload: "body",
 			inlineFonts: true,
 		}),
+		compress(),
 	],
 });
