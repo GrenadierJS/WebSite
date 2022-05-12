@@ -8,10 +8,7 @@ export default defineConfig({
 		integrations: true,
 	},
 	integrations: [
-		critters({
-			preload: "body",
-			inlineFonts: true,
-		}),
+		critters(),
 		compress(),
 	],
 });
