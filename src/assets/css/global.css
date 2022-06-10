@@ -27,12 +27,6 @@ img {
 }
 
 .swup-progress-bar {
-<<<<<<< HEAD
 	height: 4px;
 	background-color: #0ca678;
-=======
-	height: 5px;
-	/* TODO Define your color theme in hex here */
-	/* @apply bg-transparent; */
->>>>>>> upstream/main
 }
