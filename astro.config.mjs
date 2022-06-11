@@ -8,6 +8,7 @@ export default defineConfig({
 	experimental: {
 		integrations: true,
 	},
+<<<<<<< Updated upstream
 	integrations: [
 		sitemap(),
 		critters({
@@ -15,4 +16,9 @@ export default defineConfig({
 		}),
 		compress(),
 	],
+=======
+	integrations: [critters({
+			"preload": "swap-high",
+		}), compress()],
+>>>>>>> Stashed changes
 });
