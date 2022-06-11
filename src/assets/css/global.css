@@ -25,8 +25,3 @@ img {
 *:after {
 	--tw-ring-inset: /*!*/ /*!*/ ;
 }
-
-.swup-progress-bar {
-	height: 4px;
-	background-color: #0ca678;
-}
