@@ -6,12 +6,12 @@
 		"start": "astro dev"
 	},
 	"devDependencies": {
-		"@astrojs/sitemap": "0.2.1",
+		"@astrojs/sitemap": "0.2.2",
 		"@tailwindcss/aspect-ratio": "0.4.0",
 		"@tailwindcss/forms": "0.5.2",
 		"@tailwindcss/line-clamp": "0.4.0",
 		"@tailwindcss/typography": "0.5.2",
-		"astro": "1.0.0-beta.53",
+		"astro": "1.0.0-beta.56",
 		"astro-compress": "0.0.12",
 		"astro-critters": "0.0.8",
 		"autoprefixer": "10.4.7",
