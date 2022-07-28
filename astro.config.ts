@@ -5,8 +5,5 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
 	site: "https://grenadier.dev",
-	experimental: {
-		integrations: true,
-	},
 	integrations: [sitemap(), critters(), compress()],
 });
