@@ -11,6 +11,7 @@
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
 	"license": "SEE LICENSE IN LICENSE",
+	"private": true,
 	"scripts": {
 		"build": "astro build",
 		"start": "astro dev"
