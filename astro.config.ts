@@ -1,8 +1,10 @@
 import sitemap from "@astrojs/sitemap";
-import compress from "astro-compress";
 import critters from "astro-critters";
+import compress from "astro-compress";
 
-export default /** @type {import('astro').AstroUserConfig} */ {
+import type { AstroUserConfig } from "astro";
+
+export default {
 	site: "https://grenadier.dev",
 	integrations: [
 		sitemap(),
@@ -11,4 +13,4 @@ export default /** @type {import('astro').AstroUserConfig} */ {
 			logger: 1,
 		}),
 	],
-};
+} as AstroUserConfig;
