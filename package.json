@@ -10,7 +10,7 @@
 		"url": "https://github.com/GrenadierJS/grenadier.dev/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
-	"license": "SEE LICENSE IN LICENSE",
+	"license": "MIT",
 	"private": true,
 	"keywords": [],
 	"scripts": {
