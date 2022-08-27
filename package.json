@@ -14,7 +14,7 @@
 	"private": true,
 	"keywords": [],
 	"scripts": {
-		"build": "astro build",
+		"build": "astro check && astro build",
 		"start": "astro dev"
 	},
 	"devDependencies": {
