@@ -12,7 +12,6 @@
 	"author": "Nikola Hristov <nikola@playform.cloud>",
 	"license": "MIT",
 	"private": true,
-	"keywords": [],
 	"scripts": {
 		"build": "astro check && astro build",
 		"start": "astro dev"
