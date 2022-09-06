@@ -9,7 +9,7 @@
 	"bugs": {
 		"url": "https://github.com/GrenadierJS/grenadier.dev/issues"
 	},
-	"author": "nikolarhristov",
+	"author": "grenadierjs",
 	"license": "MIT",
 	"private": true,
 	"scripts": {
