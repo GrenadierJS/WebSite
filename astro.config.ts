@@ -4,7 +4,7 @@ import critters from "astro-critters";
 
 import sitemap from "@astrojs/sitemap";
 
-export default (): AstroUserConfig => ({
+export default {
 	site: "https://grenadier.dev",
 	integrations: [
 		sitemap(),
@@ -13,4 +13,4 @@ export default (): AstroUserConfig => ({
 			logger: 1,
 		}),
 	],
-});
+} satisfies AstroUserConfig;
