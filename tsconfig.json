@@ -1,4 +1,4 @@
-ti{
+{
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
@@ -6,5 +6,6 @@ ti{
 			"@layouts/*": ["src/layouts/*"]
 		},
 		"types": ["astro/client", "astro/env"]
-	}
+	},
+	"extends": "@lightrix/config/base/ts"
 }
