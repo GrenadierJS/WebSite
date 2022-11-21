@@ -8,8 +8,6 @@ export default {
 	integrations: [
 		sitemap(),
 		critters(),
-		compress({
-			logger: 1,
-		}),
+		compress(),
 	],
 };
