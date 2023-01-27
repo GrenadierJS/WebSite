@@ -1,10 +1,10 @@
 import { defineConfig } from "astro/config";
 
+import prefetch from "@astrojs/prefetch";
+import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
 import critters from "astro-critters";
-import prefetch from "@astrojs/prefetch";
 import rome from "astro-rome";
-import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
 	site: "https://grenadier.dev",
