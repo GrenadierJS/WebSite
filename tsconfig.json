@@ -10,6 +10,12 @@
 			],
 			"@lib/*": [
 				"src/lib/*"
+			],
+			"@pages/*": [
+				"src/pages/*"
+			],
+			"@scripts/*": [
+				"src/scripts/*"
 			]
 		},
 		"types": [
