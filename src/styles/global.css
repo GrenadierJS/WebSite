@@ -10,8 +10,11 @@ body {
 body {
 	@apply flex
 		flex-grow
+		flex-col
 		antialiased
-		dark:bg-black dark:text-white sm:subpixel-antialiased;
+		dark:bg-black
+		dark:text-white
+		sm:subpixel-antialiased;
 }
 
 img {
