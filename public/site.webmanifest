@@ -62,10 +62,5 @@
 	"orientation": "landscape",
 	"short_name": "grenadier",
 	"start_url": "/",
-<<<<<<< HEAD
 	"theme_color": "#0ca678"
 }
-=======
-	"theme_color": "// TODO Use the same theme color from template.html"
-}
->>>>>>> upstream/main
