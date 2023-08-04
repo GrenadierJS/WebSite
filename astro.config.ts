@@ -8,6 +8,7 @@ import worker from "astrojs-service-worker";
 
 export default defineConfig({
 	srcDir: "./Source",
+	publicDir: "./Public",
 	site: "https://grenadier.dev",
 	experimental: {
 		assets: true,
