@@ -1,10 +1,15 @@
 ---
 import "@styles/Base.css";
 
+<<<<<<< HEAD
 const {
 	title = "GrenadierJS",
 	description = "Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma",
 } = Astro.props;
+=======
+// TODO Place your title and description here
+const { title = "", description = "" } = Astro.props;
+>>>>>>> upstream/main
 ---
 
 <!DOCTYPE html>
@@ -20,11 +25,16 @@ const {
 		<meta charset="utf-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<<<<<<< HEAD
 		<meta name="theme-color" content="#0ca678" />
 		<meta name="apple-mobile-web-app-capable" content="no" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 		<meta name="msapplication-TileColor" content="#0ca678" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
+=======
+		<!-- TODO Define your color theme in hex here -->
+		<meta name="theme-color" content="" />
+>>>>>>> upstream/main
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="twitter:dnt" content="on" />
 
@@ -40,16 +50,20 @@ const {
 			href="/site.webmanifest"
 			crossorigin="use-credentials"
 		/>
+<<<<<<< HEAD
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 		/>
+=======
+>>>>>>> upstream/main
 
 		<style is:global>
 			@import "@styles/Global.css";
 		</style>
 
 		<!-- Favicon -->
+<<<<<<< HEAD
 		<link
 			rel="apple-touch-icon"
 			sizes="114x114"
@@ -132,6 +146,12 @@ const {
 	</head>
 	<body>
 		<div id="grenadier-web" class="flex flex-grow">
+=======
+	</head>
+	<body>
+		<!-- TODO Generate the ID here -->
+		<div id="">
+>>>>>>> upstream/main
 			<div class="grow">
 				<slot />
 			</div>
