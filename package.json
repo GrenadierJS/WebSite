@@ -1,7 +1,7 @@
 {
 	"name": "grenadier-web",
 	"version": "0.0.1",
-	"private": "false",
+	"private": false,
 	"homepage": "https://github.com/GrenadierJS/grenadier.dev#readme",
 	"bugs": {
 		"url": "https://github.com/GrenadierJS/grenadier.dev/issues"
