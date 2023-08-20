@@ -2,9 +2,14 @@
 import "@Style/Base.css";
 
 const {
-	title = "GrenadierJS",
-	description = "Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma",
+	Title = "GrenadierJS",
+	Description = "Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma",
 } = Astro.props;
+
+interface Props {
+	Title: string;
+	Description: string;
+}
 ---
 
 <!DOCTYPE html>
@@ -16,9 +21,9 @@ const {
 		</script>
 
 		<!-- Meta -->
-		<title>{title}</title>
+		<title>{Title}</title>
 		<meta charset="utf-8" />
-		<meta name="description" content={description} />
+		<meta name="description" content={Description} />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<meta name="theme-color" content="#0ca678" />
 		<meta name="apple-mobile-web-app-capable" content="no" />
