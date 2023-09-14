@@ -135,14 +135,12 @@ interface Props {
 			content="/Favicon/mstile-144x144.png"
 		/>
 	</head>
-	<body>
-		<div id="grenadier-web" class="flex flex-grow">
-			<div class="grow">
-				<slot />
-			</div>
-			<script>
-				import "@Script/Firebase";
-			</script>
+	<body class="flex flex-grow">
+		<div class="grow">
+			<slot />
 		</div>
+		<script>
+			import "@Script/Firebase";
+		</script>
 	</body>
 </html>
