@@ -10,11 +10,13 @@ interface Props {
 	Title?: string;
 	Description?: string;
 }
+
+const { Head } = await import("astro-capo");
 ---
 
 <!doctype html>
 <html lang="en" class="no-js" dir="ltr">
-	<head>
+	<Head>
 		<script>
 			document.documentElement.classList.remove("no-js");
 			document.documentElement.classList.add("js");
@@ -134,7 +136,7 @@ interface Props {
 			name="msapplication-TileImage"
 			content="/Favicon/mstile-144x144.png"
 		/>
-	</head>
+	</Head>
 	<body class="flex flex-grow">
 		<div class="grow">
 			<slot />
