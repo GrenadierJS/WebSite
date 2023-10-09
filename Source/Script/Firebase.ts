@@ -1,6 +1,4 @@
-import { initializeApp as Initialize } from "firebase/app";
-
-Initialize({
+(await import("firebase/app")).initializeApp({
 	apiKey: "AIzaSyA2-PGZUDCvuMP-et1ajAWb2r6QXY4WGl4",
 	authDomain: "grenadierjs.firebaseapp.com",
 	databaseURL: "https://grenadierjs.firebaseio.com",
