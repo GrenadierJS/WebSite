@@ -1,4 +1,6 @@
-(await import("firebase/app")).initializeApp({
+import { initializeApp } from "firebase/app";
+
+initializeApp({
 	apiKey: "AIzaSyA2-PGZUDCvuMP-et1ajAWb2r6QXY4WGl4",
 	authDomain: "grenadierjs.firebaseapp.com",
 	databaseURL: "https://grenadierjs.firebaseio.com",
@@ -9,4 +11,3 @@
 	measurementId: "G-EQHF084T2N",
 });
 
-export {};
