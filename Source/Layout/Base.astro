@@ -12,6 +12,7 @@ interface Props {
 }
 
 import { Head } from "astro-capo";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -136,6 +137,7 @@ import { Head } from "astro-capo";
 			name="msapplication-TileImage"
 			content="/Favicon/mstile-144x144.png"
 		/>
+		<ViewTransitions />
 	</Head>
 	<body class="flex flex-grow">
 		<div class="grow">
