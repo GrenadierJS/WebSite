@@ -2,7 +2,17 @@
 	"name": "@website/grenadier_nikolahristov_tech",
 	"version": "0.0.1",
 	"private": false,
+<<<<<<< HEAD
 	"homepage": "https://github.com/GrenadierJS/Website#readme",
+=======
+	"description": "📄 Starter template for AstroJS.",
+	"keywords": [
+		"astro",
+		"starter",
+		"skeleton"
+	],
+	"homepage": "https://github.com/Playform/AstroStarterTemplate#readme",
+>>>>>>> upstream/main
 	"bugs": {
 		"url": "https://github.com/GrenadierJS/Website/issues"
 	},
