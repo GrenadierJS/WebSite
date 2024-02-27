@@ -1,4 +1,4 @@
-# [grenadier.dev] 💂🏻‍♂️
+# 💂🏻‍♂️ [grenadier.dev]
 
 Grenadier.dev main website.
 
