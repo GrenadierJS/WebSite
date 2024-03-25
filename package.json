@@ -2,13 +2,13 @@
 	"name": "@website/grenadier_nikolahristov_tech",
 	"version": "0.0.1",
 	"private": false,
-	"homepage": "https://github.com/GrenadierJS/Website#readme",
+	"homepage": "HTTPS://GitHub.Com/GrenadierJS/Website#readme",
 	"bugs": {
-		"url": "https://github.com/GrenadierJS/Website/issues"
+		"url": "HTTPS://GitHub.Com/GrenadierJS/Website/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/GrenadierJS/Website.git"
+		"url": "git+HTTPS://GitHub.Com/GrenadierJS/Website.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
