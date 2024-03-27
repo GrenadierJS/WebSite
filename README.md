@@ -1,5 +1,3 @@
-# 💂🏻‍♂️ [grenadier.dev]
+# 🗺️ [Website]
 
-Grenadier.dev main website.
-
-[grenadier.dev]: https://grenadier.dev
+[Website]: https://grenadier.dev
