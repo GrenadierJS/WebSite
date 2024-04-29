@@ -1,3 +1,3 @@
-# 🗺️ [Website] —
+# 🗺️ [WebSite] —
 
-[Website]: https://grenadier.dev
+[WebSite]: https://grenadier.dev
