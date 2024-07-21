@@ -2,7 +2,7 @@ export default (await import("astro/config")).defineConfig({
 	srcDir: "./Source",
 	publicDir: "./Public",
 	outDir: "./Target",
-	site: "https://Grenadier.Dev",
+	site: "HTTPS://Grenadier.Dev",
 	compressHTML: true,
 	prefetch: true,
 	integrations: [
