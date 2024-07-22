@@ -1,15 +1,10 @@
 ---
 import "@Stylesheet/Base.css";
 
-<<<<<<< HEAD
 const {
 	Title = "GrenadierJS",
 	Description = "Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma",
 } = Astro.props;
-=======
-// TODO Place your title and description here
-const { Title = "", Description = "" } = Astro.props;
->>>>>>> Fork/Current
 
 interface Props {
 	Title?: string;
@@ -33,16 +28,11 @@ import { ViewTransitions } from "astro:transitions";
 		<meta charset="utf-8" />
 		<meta name="description" content={Description} />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<<<<<<< HEAD
 		<meta name="theme-color" content="#0ca678" />
 		<meta name="apple-mobile-web-app-capable" content="no" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 		<meta name="msapplication-TileColor" content="#0ca678" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
-=======
-		<!-- TODO Define your color theme in hex here -->
-		<meta name="theme-color" content="" />
->>>>>>> Fork/Current
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="twitter:dnt" content="on" />
 
@@ -58,20 +48,16 @@ import { ViewTransitions } from "astro:transitions";
 			href="/site.webmanifest"
 			crossorigin="use-credentials"
 		/>
-<<<<<<< HEAD
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
 		/>
-=======
->>>>>>> Fork/Current
 
 		<style is:global>
 			@import "@Stylesheet/Global.css";
 		</style>
 
 		<!-- Favicon -->
-<<<<<<< HEAD
 		<link
 			rel="apple-touch-icon"
 			sizes="114x114"
@@ -154,11 +140,6 @@ import { ViewTransitions } from "astro:transitions";
 		<ViewTransitions />
 	</Head>
 	<body class="flex flex-grow">
-=======
-		<ViewTransitions />
-	</Head>
-	<body>
->>>>>>> Fork/Current
 		<div class="grow">
 			<slot />
 		</div>
