@@ -1,7 +1,7 @@
 {
 	"name": "@website/grenadier_nikolahristov_tech",
 	"version": "0.0.1",
-	"private": false,
+	"private": true,
 	"homepage": "HTTPS://GitHub.Com/GrenadierJS/Website#readme",
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/GrenadierJS/Website/issues"
@@ -55,7 +55,7 @@
 		"zod": "*"
 	},
 	"publishConfig": {
-		"access": "public",
+		"access": "restricted",
 		"provenance": true
 	}
 }
