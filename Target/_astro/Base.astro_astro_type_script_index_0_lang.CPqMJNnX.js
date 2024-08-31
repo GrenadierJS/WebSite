@@ -1,7 +1,7 @@
 import { _ as a } from "./preload-helper.BiBI96sQ.js";
 (
 	await a(async () => {
-		const { initializeApp: e } = await import("./index.esm.WPJ9Gp6O.js");
+		const { initializeApp: e } = await import("./index.esm.C4IwMFMF.js");
 		return { initializeApp: e };
 	}, [])
 ).initializeApp({
@@ -14,4 +14,4 @@ import { _ as a } from "./preload-helper.BiBI96sQ.js";
 	appId: "1:16903102826:web:f85c7fd237548c3edf4513",
 	measurementId: "G-EQHF084T2N",
 });
-//# sourceMappingURL=Base.astro_astro_type_script_index_0_lang.BVtGQlmz.js.map
+//# sourceMappingURL=Base.astro_astro_type_script_index_0_lang.CPqMJNnX.js.map
