@@ -1,6 +1,9 @@
 ---
 import "@Stylesheet/Base.css";
 
+import { Head } from "astro-capo";
+import { ViewTransitions } from "astro:transitions";
+
 const {
 	Title = "GrenadierJS",
 	Description = "Full-stack, multi-client JavaScript Framework built on Solid, GraphQL, and Prisma",
@@ -10,9 +13,6 @@ interface Props {
 	Title?: string;
 	Description?: string;
 }
-
-import { Head } from "astro-capo";
-import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -58,9 +58,7 @@ import { ViewTransitions } from "astro:transitions";
 			@import "@Stylesheet/Global.css";
 		</style>
 
-		<slot name="styles" />
-
-		<slot name="scripts" />
+		<slot name="Head" />
 
 		<!-- Favicon -->
 		<link
