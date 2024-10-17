@@ -2,7 +2,7 @@
 import "@Stylesheet/Base.css";
 
 import { Head } from "astro-capo";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 const {
 	Title = "GrenadierJS",
@@ -140,7 +140,7 @@ interface Props {
 			name="msapplication-TileImage"
 			content="/Favicon/mstile-144x144.png"
 		/>
-		<ViewTransitions />
+		<ClientRouter />
 	</Head>
 	<body class="flex flex-grow">
 		<div class="grow">
