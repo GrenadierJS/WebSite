@@ -4,7 +4,7 @@ export default defineConfig({
 	srcDir: "./Source",
 	publicDir: "./Public",
 	outDir: "./Target",
-	site: "HTTPS://Grenadier.Dev",
+	site: "https://Grenadier.Dev",
 	compressHTML: true,
 	prefetch: {
 		defaultStrategy: "hover",

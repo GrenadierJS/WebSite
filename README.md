@@ -1,3 +1,3 @@
 # [WebSite 🗾]
 
-[WebSite 🗾]: HTTPS://grenadier.dev
+[WebSite 🗾]: https://grenadier.dev
